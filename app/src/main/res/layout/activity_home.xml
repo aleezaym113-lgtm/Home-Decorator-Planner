@@ -1,0 +1,41 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#EEF2F7">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="20dp">
+        <RelativeLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:padding="8dp">
+            <LinearLayout android:layout_width="wrap_content" android:layout_height="wrap_content"
+                android:orientation="vertical" android:layout_alignParentStart="true">
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="Hello, Designer!" android:textSize="25sp" android:textStyle="bold"
+                    android:textColor="#173C8C"/>
+                <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+                    android:text="What would you like to decorate?" android:textColor="#667085"
+                    android:layout_marginTop="5dp"/>
+            </LinearLayout>
+            <TextView android:id="@+id/btnProfile" android:layout_width="48dp" android:layout_height="48dp"
+                android:layout_alignParentEnd="true" android:gravity="center" android:text="👤"
+                android:textSize="24sp" android:background="@drawable/card_background" android:clickable="true"
+                android:focusable="true"/>
+        </RelativeLayout>
+
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content"
+            android:text="Explore modules" android:textSize="20sp" android:textStyle="bold"
+            android:textColor="#173C8C" android:layout_marginTop="22dp" android:layout_marginBottom="12dp"/>
+
+        <GridLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+            android:columnCount="2" android:useDefaultMargins="true">
+            <TextView android:id="@+id/cardRooms" style="@style/ModuleCard" android:text="🛏️\nRoom Types"/>
+            <TextView android:id="@+id/cardStyles" style="@style/ModuleCard" android:text="🎨\nDecoration Styles"/>
+            <TextView android:id="@+id/cardColors" style="@style/ModuleCard" android:text="🌈\nColor Palette"/>
+            <TextView android:id="@+id/cardFurniture" style="@style/ModuleCard" android:text="🪑\nFurniture"/>
+            <TextView android:id="@+id/cardDecor" style="@style/ModuleCard" android:text="🪴\nDecor Items"/>
+            <TextView android:id="@+id/cardBudget" style="@style/ModuleCard" android:text="💰\nBudget Planner"/>
+            <TextView android:id="@+id/cardPlans" style="@style/ModuleCard" android:text="📋\nMy Plans"/>
+            <TextView android:id="@+id/cardFavorites" style="@style/ModuleCard" android:text="❤️\nFavorites"/>
+        </GridLayout>
+        <Button android:id="@+id/btnLogout" android:layout_width="match_parent"
+            android:layout_height="52dp" android:layout_marginTop="20dp"
+            android:text="Logout" android:textAllCaps="false"/>
+    </LinearLayout>
+</ScrollView>

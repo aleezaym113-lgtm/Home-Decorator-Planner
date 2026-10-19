@@ -1,0 +1,34 @@
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent" android:layout_height="match_parent" android:background="#EEF2F7">
+    <LinearLayout android:layout_width="match_parent" android:layout_height="wrap_content"
+        android:orientation="vertical" android:padding="24dp" android:gravity="center_horizontal">
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="🏡"
+            android:textSize="46sp" android:layout_marginTop="20dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Create Account"
+            android:textSize="27sp" android:textStyle="bold" android:textColor="#173C8C" android:layout_marginTop="12dp"/>
+        <TextView android:layout_width="wrap_content" android:layout_height="wrap_content" android:text="Start planning your room"
+            android:textSize="14sp" android:textColor="#667085" android:layout_marginTop="6dp"/>
+        <EditText android:id="@+id/etName" android:layout_width="match_parent"
+            android:layout_height="52dp" android:layout_marginTop="12dp" android:padding="12dp"
+            android:background="@drawable/input_background" android:hint="Full name"
+            android:inputType="textPersonName"/>
+<EditText android:id="@+id/etEmail" android:layout_width="match_parent"
+            android:layout_height="52dp" android:layout_marginTop="12dp" android:padding="12dp"
+            android:background="@drawable/input_background" android:hint="Email address"
+            android:inputType="textEmailAddress"/>
+<EditText android:id="@+id/etPassword" android:layout_width="match_parent"
+            android:layout_height="52dp" android:layout_marginTop="12dp" android:padding="12dp"
+            android:background="@drawable/input_background" android:hint="Password"
+            android:inputType="textPassword"/>
+<EditText android:id="@+id/etConfirmPassword" android:layout_width="match_parent"
+            android:layout_height="52dp" android:layout_marginTop="12dp" android:padding="12dp"
+            android:background="@drawable/input_background" android:hint="Confirm password"
+            android:inputType="textPassword"/>
+<Button android:id="@+id/btnRegister" android:layout_width="match_parent"
+            android:layout_height="52dp" android:layout_marginTop="14dp" android:text="Register"
+            android:textColor="#FFFFFF" android:background="@drawable/primary_button" android:textAllCaps="false"/>
+<Button android:id="@+id/btnBackLogin" android:layout_width="match_parent"
+            android:layout_height="52dp" android:layout_marginTop="14dp" android:text="Back to Login"
+            android:textColor="#FFFFFF" android:background="@drawable/primary_button" android:textAllCaps="false"/>
+
+    </LinearLayout></ScrollView>
